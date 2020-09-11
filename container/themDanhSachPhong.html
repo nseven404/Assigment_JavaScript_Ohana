@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm danh sách phòng</title>
+    <link rel="stylesheet" href="/css/component.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/themPhong.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <script src="js/service/phongTroService.js"></script>
+    <script src="js/container/danhSachPhongTro.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="navChung">
+                <div class="rightNav">
+                    <a href="#">
+                        <span style="color: white; font-size: 25px;" class="material-icons">
+                            get_app
+                        </span>
+                        <span>Tải APP</span>
+                    </a>
+                </div>
+                <div class="rightNav">
+                    <a href="#">
+                        <span style="color: white; font-size: 25px;" class="material-icons">
+                            add
+                        </span>
+                        <span>Đăng phòng dễ dàng</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="menuIconVaSearch">
+            <div class="iconChinh">
+                <a href="danhSachPhong.html"><img src="/images/8cc95480cbd2708db10ad4b8de56306a.svg" alt=""></a>
+                <div class="timKiem is-rounded">
+                    <select name="" id="">
+                        <option value="HCM">Hồ Chí Minh</option>
+                        <option value="HN">Hà Nội</option>
+                    </select>
+                    <input type="text" placeholder="Tìm kiếm theo địa điểm, quận, tên đường...">
+                    <span style="color: var(--primary-color);" class="material-icons">
+                        search
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <div class="backgroundDangPhong">
+        <div class="mark">
+            <div class="themPhong">
+                <h2>Chọn loại phòng</h2>
+                <div class="customChung">
+                    <input type="radio" name="kind" value="Kí túc xá/Homestay">
+                    <span>Kí túc xá/Homestay</span>
+                    <input type="radio" name="kind" value="Phòng cho thuê">
+                    <span>Phòng cho thuê</span>
+                    <input type="radio" name="kind" value="Phòng ở ghép">
+                    <span>Phòng ở ghép</span>
+                    <input type="radio" name="kind" value="Nhà nguyên căn">
+                    <span>Nhà nguyên căn</span>
+                    <input type="radio" name="kind" value="Căn hộ">
+                    <span>Căn hộ</span>
+                </div>
+                <h2>Số lượng căn</h2>
+                <div class="customChung">
+                    <input class="is-rounded" type="number" inputmode="numeric">
+                </div>
+                <h2>Giới tính</h2>
+                <div class="customChung">
+                    <input type="radio" id="tatCa" name="gender">
+                    <span>Tất cả</span>
+                    <input type="radio" id="nam" name="gender">
+                    <span>Nam</span>
+                    <input type="radio" id="nu" name="gender">
+                    <span>Nữ</span>
+                </div>
+                <label for="titlePhong">Title phòng</label>
+
+                <input id="titlePhong" type="text" value="">
+
+                <label for="loaiPhong">Loại phòng</label>
+                <input id="loaiPhong" type="text" value="">
+
+                <label for="loaiPhong">Loại phòng phòng</label>
+                <input id="loaiPhong" type="text" value="">
+
+
+
+                <label for="diaChi">Địa chỉ</label>
+                <input id="diaChi" type="text" value="">
+                <label for="giaPhong">Giá phòng</label>
+                <input id="giaPhong" type="text" value="">
+                <button onclick="onclickThemPhong()">Thêm</button>
+
+                <div id="hienThiDanhSachPhong"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function onclickThemPhong() {
+            // Truy cập node
+            var nodeTitleChung = document.getElementById("titleLon");
+            var nodeTenPhong = document.getElementById("tenPhong");
+            var nodeGioiTinh = document.getElementById("gioiTinh");
+            var nodeDiaChi = document.getElementById("diaChi");
+            var nodeGiaPhong = document.getElementById("giaPhong");
+
+            // Ghi dữ liệu ra node
+            var titleChung = nodeTitleChung.value;
+            var tenPhong = nodeTenPhong.value;
+            var gioiTinh = nodeGioiTinh.value;
+            var diaChi = nodeDiaChi.value;
+            var giaPhong = nodeGiaPhong.value;
+
+            var nodeDanhSachPhongTro = getListPhongTro();
+            console.log(nodeDanhSachPhongTro);
+            nodeDanhSachPhongTro.push(danhSachPhongTro);
+            var nodeHienThiSanPham = document.getElementById("hienThiDanhSachPhong");
+            var HTML = danhSachPhongSangHTML(danhSachPhong);
+            console.log(HTML);
+            nodeHienThiSanPham.innerHTML = HTML;
+    </script>
+</body>
+
+</html>

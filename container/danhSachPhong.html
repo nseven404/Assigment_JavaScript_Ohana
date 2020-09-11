@@ -5,11 +5,279 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohana</title>
-
+    <link rel="stylesheet" href="/css/component.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <script src="/js/helper/utils.js"></script>
+    <script src="/container/danhSachPhong.js"></script>
 </head>
 
 <body>
+    <header>
+        <div class="nav">
+            <div class="navChung">
+                <div class="rightNav">
+                    <a href="#">
+                        <span style="color: white; font-size: 25px;" class="material-icons">
+                            get_app
+                        </span>
+                        <span>Tải APP</span>
+                    </a>
+                </div>
+                <div class="rightNav">
+                    <a href="#">
+                        <span style="color: white; font-size: 25px;" class="material-icons">
+                            add
+                        </span>
+                        <span>Đăng phòng dễ dàng</span>
+                    </a>
+                </div>
+            </div>
 
+        </div>
+        <div class="menuIconVaSearch">
+            <div class="iconChinh">
+                <a href="danhSachPhong.html"><img src="/images/8cc95480cbd2708db10ad4b8de56306a.svg" alt=""></a>
+                <div class="timKiem is-rounded">
+                    <select name="" id="">
+                        <option value="HCM">Hồ Chí Minh</option>
+                        <option value="HN">Hà Nội</option>
+                    </select>
+                    <input type="text" placeholder="Tìm kiếm theo địa điểm, quận, tên đường...">
+                    <span style="color: var(--primary-color);" class="material-icons">
+                        search
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+        <div class="container">
+            <div class="chiaCot">
+                <div class="cot1">
+                    <div class="boLoc">
+                        <span>Bộ lọc</span>
+                        <a href="#"><button class="btn btn-small btn-outline-success is-rounded">Áp
+                                dụng</button></a>
+                    </div>
+                    <div class="chonBoLoc">
+                        <div class="loc">
+                            <span>Giá</span>
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                        </div>
+                        <div class="loc">
+                            <span>Tiện ích</span>
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                        </div>
+                    </div>
+                    <div class="loc">
+                        <span>Loại phòng</span>
+                            <span class="material-icons">
+                            keyboard_arrow_down
+                    </div>
+                    <div class="loc">
+                        <span>Giới tính</span>
+                            <span class="material-icons">
+                            keyboard_arrow_down
+                    </div>
+                    <div class="applyApDung">
+                        <span>Áp dụng</span>
+                        </div>
+                    </div>
+                    <div class="cot2">
+                        <div class="titleLon">
+                            <p>Phòng mới nhất</p>
+                        </div>
+                        <div id="phongMoi">
+                            <div class="images">
+                                <img src="https://bayleaf.s3.amazonaws.com/property-images%2F1596886191170_IMG_0826.HEIC" alt="">
+                                <div class="anhVery">
+                                    <img src="/images/very.png" alt="">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <span class="titleTenPhong">Phòng cho thuê Bầu Cát 2, Quận Tân Bình</span>
+                                <div class="titleChung">
+                                    <span class="material-icons">
+                                        home
+                                        </span>
+                                    <span>Phòng cho thuê</span>
+                                </div>
+                                <div class="titleChung">
+                                    <span class="material-icons">
+                                        people
+                                        </span>
+                                    <span class="titleChung">Nam và Nữ</span>
+                                    <span class="material-icons">
+                                        straighten
+                                        </span>
+                                    <span>15m²</span>
+                                </div>
+                                <div class="titleChung">
+                                    <span class="material-icons">
+                                        location_on
+                                        </span>
+                                    <span>86/8 Bầu Cát 2, Phường 12, Quận Tân Bình, Hồ Chí Minh</span>
+                                </div>
+                            </div>
+                            <div class="giaPhong">
+                                <span>3,2</span><span> tr/phòng</span>
+                            </div>
+                        </div>
+
+                        <!-- Hết 1 phòng -->
+                        <div id="phongMoi">
+                            <div class="images">
+                                <img src="https://bayleaf.s3.amazonaws.com/property-images%2F1596886191170_IMG_0826.HEIC" alt="">
+                                <div class="anhVery">
+                                    <img src="/images/very.png" alt="">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <span class="titleTenPhong">Phòng cho thuê Bầu Cát 2, Quận Tân Bình</span>
+                                <div class="titleChung">
+                                    <span class="material-icons">
+                                        home
+                                        </span>
+                                    <span>Phòng cho thuê</span>
+                                </div>
+                                <div class="titleChung">
+                                    <span class="material-icons">
+                                        people
+                                        </span>
+                                    <span class="titleChung">Nam và Nữ</span>
+                                    <span class="material-icons">
+                                        straighten
+                                        </span>
+                                    <span>15m²</span>
+                                </div>
+                                <div class="titleChung">
+                                    <span class="material-icons">
+                                        location_on
+                                        </span>
+                                    <span>86/8 Bầu Cát 2, Phường 12, Quận Tân Bình, Hồ Chí Minh</span>
+                                </div>
+                            </div>
+                            <div class="giaPhong">
+                                <span>3,2</span><span> tr/phòng</span>
+                            </div>
+                        </div>
+                        <!-- Hết 1 phòng -->
+                        <div id="phongMoi">
+                            <div class="images">
+                                <img src="https://bayleaf.s3.amazonaws.com/property-images%2F1596886191170_IMG_0826.HEIC" alt="">
+                                <div class="anhVery">
+                                    <img src="/images/very.png" alt="">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <span class="titleTenPhong">Phòng cho thuê Bầu Cát 2, Quận Tân Bình</span>
+                                <div class="titleChung">
+                                    <span class="material-icons">
+                                        home
+                                        </span>
+                                    <span>Phòng cho thuê</span>
+                                </div>
+                                <div class="titleChung">
+                                    <span class="material-icons">
+                                        people
+                                        </span>
+                                    <span class="titleChung">Nam và Nữ</span>
+                                    <span class="material-icons">
+                                        straighten
+                                        </span>
+                                    <span>15m²</span>
+                                </div>
+                                <div class="titleChung">
+                                    <span class="material-icons">
+                                        location_on
+                                        </span>
+                                    <span>86/8 Bầu Cát 2, Phường 12, Quận Tân Bình, Hồ Chí Minh</span>
+                                </div>
+                            </div>
+                            <div class="giaPhong">
+                                <span>3,2</span><span> tr/phòng</span>
+                            </div>
+                        </div>
+                        <!-- Hết 1 phòng -->
+                        <div id="phongMoi">
+                            <div class="images">
+                                <img src="https://bayleaf.s3.amazonaws.com/property-images%2F1596886191170_IMG_0826.HEIC" alt="">
+                                <div class="anhVery">
+                                    <img src="/images/very.png" alt="">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <span class="titleTenPhong">Phòng cho thuê Bầu Cát 2, Quận Tân Bình</span>
+                                <div class="titleChung">
+                                    <span class="material-icons">
+                                        home
+                                        </span>
+                                    <span>Phòng cho thuê</span>
+                                </div>
+                                <div class="titleChung">
+                                    <span class="material-icons">
+                                        people
+                                        </span>
+                                    <span class="titleChung">Nam và Nữ</span>
+                                    <span class="material-icons">
+                                        straighten
+                                        </span>
+                                    <span>15m²</span>
+                                </div>
+                                <div class="titleChung">
+                                    <span class="material-icons">
+                                        location_on
+                                        </span>
+                                    <span>86/8 Bầu Cát 2, Phường 12, Quận Tân Bình, Hồ Chí Minh</span>
+                                </div>
+                            </div>
+                            <div class="giaPhong">
+                                <span>3,2</span><span> tr/phòng</span>
+                            </div>
+                        </div>
+
+                        <div class="thanhChon">
+                            <span class="oChung">first</span>
+                            <span class="oChung">prev</span>
+                            <span class="blue oChung">1</span>
+                            <span class="blue oChung">2</span>
+                            <span class="blue oChung">3</span>
+                            <span class="blue oChung">4</span>
+                            <span class="blue oChung">5</span>
+                            <span class="namPhai oChung">next</span>
+                            <span class="namPhai oChung">last</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerChung">
+            <div class="footerNamGiua">
+                <div class="chiaDoi">
+                    <div class="logoFooter">
+                        <img src="/images/8cc95480cbd2708db10ad4b8de56306a.svg" alt="">
+                    </div>
+                    <div class="download">
+                        <a target="_blank" href="http://bit.ly/download-ohana-ios-fromweb"><img src="/images/appstore.png"></a>
+                        <a target="_blank" href="http://bit.ly/down-ohana-android-fromweb"><img src="/images/googleplay.png"></a>
+                    </div>
+                </div>
+                <div class="chiaDoi">
+                    <a href="#"><span>Điều khoản và chính sách
+                    </span>
+                    </a>
+                    <span>Developer By Huỳnh Văn Nam</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,297 @@
+.nav {
+    width: 100%;
+    background: var(--primary-color);
+}
+
+.navChung {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    padding: 5px;
+}
+
+.rightNav a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+}
+
+.menuIconVaSearch {
+    width: 100%;
+    background: white;
+}
+
+.iconChinh {
+    width: 1100px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.iconChinh img {
+    width: 100%;
+}
+
+.timKiem {
+    width: 440px;
+    height: 40px;
+    border: 1px solid gray;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.timKiem select {
+    width: 100px;
+    height: 35px;
+    border: none;
+    outline: none;
+}
+
+.timKiem input {
+    width: 280px;
+    height: 35px;
+    border: none;
+    outline: none;
+    color: gray;
+}
+
+.container {
+    width: 100%;
+    background-color: #F6F5F2;
+    margin-top: 20px;
+    padding: 0px 40px 40px 0px;
+}
+
+.chiaCot {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.cot1 {
+    width: 20%;
+    height: 420px;
+    padding-top: 32px;
+    padding-bottom: 24px;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.boLoc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cot2 {
+    width: 75%;
+    padding-top: 32px;
+    padding-bottom: 24px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+.titleLon {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 40px;
+}
+
+.boLoc span {
+    font-size: 24px;
+    color: #333333;
+}
+
+.loc {
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #FFFFFF;
+    background-color: #F6F7F9;
+}
+
+.applyApDung {
+    text-align: center;
+    padding-top: 20px;
+    color: var(--success-color);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#phongMoi {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 1px solid gray;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.images {
+    width: 45%;
+    height: 152px;
+    position: relative;
+}
+
+.anhVery {
+    width: 10%;
+    position: absolute;
+    left: 150px;
+    top: 10px;
+}
+
+.images img {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.content span {
+    padding: 8px;
+}
+
+.giaPhong {
+    text-align: center;
+}
+
+.giaPhong p {
+    margin-left: 32px;
+}
+
+.giaPhong span:first-child {
+    font-size: 48px;
+    color: #F73486;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.giaPhong span:last-child {
+    font-size: 16px;
+    color: #F73486;
+    margin-left: 50px;
+}
+
+.titleTenPhong {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.titleChung {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    color: #666666;
+}
+
+.thanhChon {
+    width: 80%;
+    margin: 0 auto;
+    height: 50px;
+    margin-top: 32px;
+    padding: 0 25px;
+    border-radius: 35px;
+    background-color: #eee;
+}
+
+.thanhChon span:nth-child(3) {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.thanhChon .blue:hover {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.oChung {
+    display: block;
+    padding: 0 25px;
+    float: left;
+    -webkit-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+    color: #595959;
+    font-size: 16px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.oChung:hover {
+    color: var(--success-color);
+}
+
+.namPhai {
+    float: right;
+}
+
+.footerChung {
+    width: 100%;
+}
+
+.footerNamGiua {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.chiaDoi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 20px 0px;
+}
+
+.chiaDoi .logoFooter img {
+    width: 150%;
+}
+
+.download img {
+    width: 172px;
+    height: 52px;
+}
+
+.chiaDoi:first-child {
+    border-bottom: 2px dashed #CDCDCD;
+}
+
+.chinhSachChung a span {
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.mark {
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.4);
+}
